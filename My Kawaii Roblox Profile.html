@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Kawaii Roblox Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff0f7;--bg2:#f3e8ff;--card:#ffffff;--ink:#5a2a48;--soft:#9a6b87;
+  --pink:#ff8fc2;--pink2:#ffd1e6;--lav:#c9b3ff;--mint:#b5efd9;--line:#ffc2de;--accent:#ff8fc2;
+  --shadow:0 8px 0 rgba(255,143,194,.35);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#2a1630;--bg2:#1f1530;--card:#3a2147;--ink:#ffe3f1;--soft:#d9aecb;--pink2:#5a2f63;--line:#7a4585;--shadow:0 8px 0 rgba(0,0,0,.35)}
+}
+:root[data-theme="dark"]{--bg:#2a1630;--bg2:#1f1530;--card:#3a2147;--ink:#ffe3f1;--soft:#d9aecb;--pink2:#5a2f63;--line:#7a4585;--shadow:0 8px 0 rgba(0,0,0,.35)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;font-family:Nunito,system-ui,sans-serif;color:var(--ink);
+  background:radial-gradient(circle at 15% 10%,var(--pink2) 0,transparent 35%),radial-gradient(circle at 90% 30%,var(--bg2) 0,transparent 40%),var(--bg);
+  background-color:var(--bg);overflow-x:hidden}
+.star{position:fixed;pointer-events:none;font-size:22px;opacity:.7;animation:tw 3s ease-in-out infinite}
+@keyframes tw{50%{transform:scale(1.4) rotate(20deg);opacity:.25}}
+@media (prefers-reduced-motion:reduce){.star,.pfp{animation:none!important}}
+header{text-align:center;padding:28px 16px 6px}
+h1{font-family:Fredoka,sans-serif;font-size:clamp(28px,6vw,44px);margin:0;color:var(--accent);text-shadow:3px 3px 0 var(--pink2)}
+header p{margin:6px 0 0;color:var(--soft);font-weight:700}
+main{max-width:1000px;margin:0 auto;padding:16px;display:grid;gap:22px;grid-template-columns:1fr 1fr;align-items:start}
+@media(max-width:800px){main{grid-template-columns:1fr}}
+.panel{background:var(--card);border:3px solid var(--line);border-radius:28px;padding:20px;box-shadow:var(--shadow)}
+.panel h2{font-family:Fredoka,sans-serif;margin:0 0 12px;font-size:22px}
+label{display:block;font-weight:800;font-size:14px;margin:12px 0 4px}
+input[type=text],input[type=number],textarea{width:100%;border:2.5px solid var(--line);border-radius:16px;padding:10px 14px;font:inherit;color:var(--ink);background:var(--bg);outline:none}
+input:focus,textarea:focus,button:focus-visible{border-color:var(--accent);box-shadow:0 0 0 4px var(--pink2)}
+textarea{resize:vertical;min-height:70px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{font-family:Fredoka,sans-serif;font-weight:600;font-size:16px;border:0;border-radius:999px;padding:10px 20px;cursor:pointer;color:#fff;background:var(--accent);box-shadow:0 5px 0 rgba(0,0,0,.15)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.btn.alt{background:var(--lav)}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chip{width:34px;height:34px;border-radius:50%;border:3px solid #fff;cursor:pointer;box-shadow:0 0 0 2px var(--line)}
+.chip[aria-pressed=true]{box-shadow:0 0 0 4px var(--ink)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+/* profile card */
+.card{background:var(--card);border:3px solid var(--accent);border-radius:34px;box-shadow:0 10px 0 var(--accent);overflow:hidden;position:sticky;top:12px}
+.banner{height:96px;background:repeating-linear-gradient(45deg,var(--accent) 0 14px,color-mix(in srgb,var(--accent) 70%,#fff) 14px 28px)}
+.pfpwrap{display:flex;justify-content:center;margin-top:-62px}
+.pfp{width:124px;height:124px;border-radius:50%;border:6px solid var(--card);background:var(--pink2);display:grid;place-items:center;font-size:56px;overflow:hidden;box-shadow:0 0 0 4px var(--accent);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.pfp img{width:100%;height:100%;object-fit:cover}
+.body{padding:12px 22px 24px;text-align:center}
+.name{font-family:Fredoka,sans-serif;font-size:30px;font-weight:700;margin:6px 0 0;overflow-wrap:anywhere}
+.user{color:var(--soft);font-weight:800}
+.status{display:inline-block;margin-top:10px;background:var(--pink2);border-radius:999px;padding:6px 16px;font-weight:800}
+.bio{margin:14px 0 0;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+.stat{background:var(--bg);border:2.5px solid var(--line);border-radius:18px;padding:8px 2px}
+.stat b{display:block;font-family:Fredoka,sans-serif;font-size:20px;color:var(--accent)}
+.stat span{font-size:12px;font-weight:800;color:var(--soft)}
+.games{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.game{background:var(--accent);color:#fff;border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
+.join{margin-top:16px;color:var(--soft);font-weight:700;font-size:14px}
+.link{display:inline-block;margin-top:12px;font-family:Fredoka,sans-serif;font-weight:600;text-decoration:none;color:#fff;background:var(--accent);border-radius:999px;padding:10px 20px;box-shadow:0 5px 0 rgba(0,0,0,.15)}
+.link[hidden]{display:none}
+.link:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(120px);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:999px;font-weight:800;transition:transform .3s}
+.toast.on{transform:translateX(-50%)}
+</style>
+</head>
+<body>
+<span class="star" style="left:6%;top:12%">✨</span><span class="star" style="right:8%;top:8%;animation-delay:.8s">🌸</span>
+<span class="star" style="left:3%;top:55%;animation-delay:1.5s">💖</span><span class="star" style="right:4%;top:70%;animation-delay:2s">⭐</span>
+
+<header>
+  <h1>✿ My Roblox Profile ✿</h1>
+  <p>Fill in your details and your card updates by itself</p>
+</header>
+
+<main>
+  <section class="panel" aria-label="Editor">
+    <h2>🎀 Fill in your profile</h2>
+    <label for="dn">Display name</label>
+    <input type="text" id="dn" maxlength="30" placeholder="Sakura_chan">
+    <label for="un">Roblox username (@username)</label>
+    <input type="text" id="un" maxlength="20" placeholder="sakura_roblox">
+    <label for="ln">Link to your Roblox profile</label>
+    <input type="text" id="ln" maxlength="200" placeholder="https://www.roblox.com/users/123456789/profile">
+    <label for="av">Avatar (upload a picture from your phone or computer)</label>
+    <input type="file" id="av" accept="image/*">
+    <label for="st">Status</label>
+    <input type="text" id="st" maxlength="40" placeholder="🌸 playing Adopt Me!">
+    <label for="bio">About me</label>
+    <textarea id="bio" maxlength="220" placeholder="Hi! I love cute avatars and playing with friends ✨"></textarea>
+    <div class="row">
+      <div><label for="fr">Friends</label><input type="number" id="fr" min="0" placeholder="0"></div>
+      <div><label for="fo">Followers</label><input type="number" id="fo" min="0" placeholder="0"></div>
+      <div><label for="fg">Following</label><input type="number" id="fg" min="0" placeholder="0"></div>
+      <div><label for="bd">Badges</label><input type="number" id="bd" min="0" placeholder="0"></div>
+    </div>
+    <label for="jn">Join date</label>
+    <input type="text" id="jn" maxlength="20" placeholder="March 2020">
+    <label for="gm">Favorite games (separated by commas)</label>
+    <input type="text" id="gm" placeholder="Adopt Me!, Brookhaven, Blox Fruits">
+    <label>Card color</label>
+    <div class="chips" id="chips"></div>
+    <div class="actions">
+      <button class="btn" id="save" type="button">💾 Save</button>
+      <button class="btn alt" id="reset" type="button">🧹 Clear</button>
+    </div>
+  </section>
+
+  <section aria-label="Profile card">
+    <div class="card" id="card">
+      <div class="banner"></div>
+      <div class="pfpwrap"><div class="pfp" id="pfp">🐰</div></div>
+      <div class="body">
+        <h2 class="name" id="oName">Your name</h2>
+        <div class="user" id="oUser">@username</div>
+        <a class="link" id="oLn" target="_blank" rel="noopener noreferrer" hidden>💌 Open my Roblox profile</a>
+        <div class="status" id="oSt" hidden></div>
+        <p class="bio" id="oBio"></p>
+        <div class="stats">
+          <div class="stat"><b id="oFr">0</b><span>friends</span></div>
+          <div class="stat"><b id="oFo">0</b><span>followers</span></div>
+          <div class="stat"><b id="oFg">0</b><span>following</span></div>
+          <div class="stat"><b id="oBd">0</b><span>badges</span></div>
+        </div>
+        <div class="games" id="oGm"></div>
+        <div class="join" id="oJn"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="toast" id="toast" role="status">Saved ✨</div>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var COLORS=['#ff8fc2','#b693ff','#6fd8b8','#ffb26b','#6ec6ff','#ff7a8a'];
+  var KEY='kawaii-roblox-profile';
+  var S={color:COLORS[0],img:''};
+  var fields=['dn','un','ln','st','bio','fr','fo','fg','bd','jn','gm'];
+
+  function fmt(n){n=parseInt(n,10);return isNaN(n)?'0':n.toLocaleString('en-US')}
+  function render(){
+    document.documentElement.style.setProperty('--accent',S.color);
+    $('oName').textContent=$('dn').value||'Your name';
+    $('oUser').textContent='@'+($('un').value.replace(/^@/,'')||'username');
+    var a=$('oLn'),raw=$('ln').value.trim(),href='';
+    if(raw){try{var u=new URL(/^https?:\/\//i.test(raw)?raw:'https://'+raw);if(u.protocol==='https:'||u.protocol==='http:')href=u.href}catch(e){}}
+    if(href){a.href=href;a.hidden=false}else{a.removeAttribute('href');a.hidden=true}
+    var st=$('oSt');st.textContent=$('st').value;st.hidden=!$('st').value;
+    $('oBio').textContent=$('bio').value||'Your bio will appear here ✨';
+    $('oFr').textContent=fmt($('fr').value);$('oFo').textContent=fmt($('fo').value);
+    $('oFg').textContent=fmt($('fg').value);$('oBd').textContent=fmt($('bd').value);
+    $('oJn').textContent=$('jn').value?'🎂 On Roblox since '+$('jn').value:'';
+    var g=$('oGm');g.innerHTML='';
+    $('gm').value.split(',').map(function(s){return s.trim()}).filter(Boolean).slice(0,8).forEach(function(t){
+      var e=document.createElement('span');e.className='game';e.textContent='🎮 '+t;g.appendChild(e)});
+    var p=$('pfp');p.innerHTML='';
+    if(S.img){var im=document.createElement('img');im.src=S.img;im.alt='Avatar';p.appendChild(im)}else{p.textContent='🐰'}
+    Array.prototype.forEach.call($('chips').children,function(c){c.setAttribute('aria-pressed',c.dataset.c===S.color)});
+  }
+  COLORS.forEach(function(c){
+    var b=document.createElement('button');b.type='button';b.className='chip';b.style.background=c;b.dataset.c=c;
+    b.setAttribute('aria-label','Color '+c);b.onclick=function(){S.color=c;render()};$('chips').appendChild(b);
+  });
+  fields.forEach(function(f){$(f).addEventListener('input',render)});
+
+  $('av').addEventListener('change',function(e){
+    var f=e.target.files[0];if(!f)return;
+    var r=new FileReader();
+    r.onload=function(){
+      var im=new Image();
+      im.onload=function(){
+        var s=256,cv=document.createElement('canvas');cv.width=cv.height=s;
+        var m=Math.min(im.width,im.height),sx=(im.width-m)/2,sy=(im.height-m)/2;
+        cv.getContext('2d').drawImage(im,sx,sy,m,m,0,0,s,s);
+        S.img=cv.toDataURL('image/jpeg',.85);render();
+      };
+      im.src=r.result;
+    };
+    r.readAsDataURL(f);
+  });
+
+  function toast(t){var el=$('toast');el.textContent=t;el.classList.add('on');setTimeout(function(){el.classList.remove('on')},1800)}
+  $('save').onclick=function(){
+    var d={color:S.color,img:S.img};fields.forEach(function(f){d[f]=$(f).value});
+    try{localStorage.setItem(KEY,JSON.stringify(d));toast('Saved ✨')}catch(e){toast('Could not save in this browser')}
+  };
+  $('reset').onclick=function(){
+    fields.forEach(function(f){$(f).value=''});S={color:COLORS[0],img:''};$('av').value='';
+    try{localStorage.removeItem(KEY)}catch(e){}
+    render();toast('Cleared 🧹');
+  };
+  try{
+    var raw=localStorage.getItem(KEY);
+    if(raw){var d=JSON.parse(raw);S.color=d.color||COLORS[0];S.img=d.img||'';fields.forEach(function(f){$(f).value=d[f]||''})}
+  }catch(e){}
+  render();
+})();
+</script>
+</body>
+</html>
